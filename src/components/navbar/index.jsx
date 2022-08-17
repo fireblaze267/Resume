@@ -18,14 +18,14 @@ function Navbar({ setSkill, skill }) {
         <p>Contato</p>
       </div>
 
-      <div className="navbar-item">
+      {/*<div className="navbar-item">
         <HouseFill size={20} />
         <p>Home</p>
-      </div>
+      </div>*/}
 
       <div
         onClick={() => setSkill(skill === false ? true : false)}
-        className="navbar-item"
+        className={skill ? "navbar-item-active" : "navbar-item"}
       >
         <PersonLinesFill size={20} />
         <p>Habilidades</p>

@@ -1,10 +1,19 @@
 import React from "react";
-import { Download, XCircleFill } from "react-bootstrap-icons";
+import {
+  Circle,
+  CircleFill,
+  Download,
+  XCircleFill,
+} from "react-bootstrap-icons";
 import "./styled.scss";
 import { skills } from "../../utils/skills";
 import Pdf from "../../assets/ViniciusGama.pdf";
 
 function SkillsCard({ setSkill }) {
+  const icons8Link = () => {
+    window.open("https://icons8.com/");
+  };
+
   return (
     <div className="skill-card-main">
       <div className="skill-view">
@@ -18,13 +27,26 @@ function SkillsCard({ setSkill }) {
             return (
               <div key={index} className="skill-card">
                 <p>
-                  {e.title} {e.icon}
+                  <img src={e.icon} />
+                  {e.title}
                 </p>
-                <h1>{e.percentage}</h1>
+                <div className="skill-percent">
+                  {[...Array(5)].map((elem, index) => {
+                    index + 1;
+                    return e.percent > index ? (
+                      <CircleFill key={index} />
+                    ) : (
+                      <Circle key={index} />
+                    );
+                  })}
+                </div>
               </div>
             );
           })}
         </div>
+
+        <label onClick={icons8Link}>Icons by icons8</label>
+
         <div onClick={() => setSkillView(false)} className="skill-button">
           <a href={Pdf} download="ViniciusGama.pdf">
             <button>
