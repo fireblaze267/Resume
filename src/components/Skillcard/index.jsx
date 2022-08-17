@@ -3,6 +3,7 @@ import {
   Circle,
   CircleFill,
   Download,
+  StarFill,
   XCircleFill,
 } from "react-bootstrap-icons";
 import "./styled.scss";
@@ -29,6 +30,7 @@ function SkillsCard({ setSkill }) {
                 <p>
                   <img src={e.icon} />
                   {e.title}
+                  {e.primary && <StarFill />}
                 </p>
                 <div className="skill-percent">
                   {[...Array(5)].map((elem, index) => {

@@ -88,12 +88,16 @@
       align-items: center;
     }
     img {
-      width: 30px;
-      height: 30px;
+      width: 32px;
+      height: auto;
       margin-right: 10px;
       border-radius: 50%;
-      padding: 2px;
+      padding: 5px;
       background-color: white;
+    }
+    svg {
+      margin-left: 8px;
+      color: #ffc404;
     }
     h1 {
       color: #ffffff;
@@ -109,6 +113,7 @@
     align-items: center;
     svg {
       margin: 0px 8px;
+      color: white;
     }
   }
   &-button {
