@@ -16,9 +16,9 @@ function Information() {
           <p>
             Olá! Sou um desenvolvedor web que sempre está em busca de aprender
             coisas novas e aplicar meus conhecimentos para resolver problemas,
-            Tenho mais de 8 meses de experiência criando aplicações em React
-            para empresas, como sistema interno, portal de pedidos e otimização
-            de processos.
+            Tenho mais de 1 ano de experiência criando aplicações em React para
+            empresas, como sistema interno, portal de pedidos e otimização de
+            processos.
           </p>
         </div>
         <div className="profile-network">

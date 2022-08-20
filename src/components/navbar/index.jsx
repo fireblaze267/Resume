@@ -7,13 +7,16 @@ import {
 } from "react-bootstrap-icons";
 import "./styled.scss";
 
-function Navbar({ setSkill, skill }) {
+function Navbar({ setSkill, skill, setContact, contact }) {
   return (
     <nav className="navbar-main">
       <div className="navbar-button">
         <ThreeDots />
       </div>
-      <div className="navbar-item">
+      <div
+        onClick={() => setContact(contact === false ? true : false)}
+        className={contact ? "navbar-item-active" : "navbar-item"}
+      >
         <PostcardFill size={20} />
         <p>Contato</p>
       </div>

@@ -1,19 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.scss";
 import SkillsCard from "./components/Skillcard";
 import Information from "./components/information";
 import Navbar from "./components/navbar";
+import ContactCard from "./components/contactCard";
 
 function App() {
   const [skillView, setSkillView] = useState(false);
+  const [contact, setContact] = useState(false);
 
-  console.log(skillView);
+  useEffect(() => {}, [contact, skillView]);
 
   return (
     <div className="main-app">
-      <Navbar skill={skillView} setSkill={setSkillView} />
+      <Navbar
+        contact={contact}
+        setContact={setContact}
+        skill={skillView}
+        setSkill={setSkillView}
+      />
       <Information />
       {skillView && <SkillsCard setSkill={setSkillView} />}
+      {contact && <ContactCard setContact={setContact} />}
     </div>
   );
 }
