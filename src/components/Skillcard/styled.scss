@@ -154,6 +154,16 @@
     }
   }
 }
+@media (max-width: 800px) {
+  .skill-view {
+    width: 90%;
+  }
+  .skill-title {
+    svg {
+      display: none;
+    }
+  }
+}
 
 @keyframes modalSkill {
   0% {

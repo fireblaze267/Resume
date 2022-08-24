@@ -9,8 +9,6 @@ function App() {
   const [skillView, setSkillView] = useState(false);
   const [contact, setContact] = useState(false);
 
-  useEffect(() => {}, [contact, skillView]);
-
   return (
     <div className="main-app">
       <Navbar

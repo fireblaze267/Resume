@@ -1,5 +1,5 @@
 import React from "react";
-import { Envelope, XCircleFill } from "react-bootstrap-icons";
+import { Envelope, Github, Linkedin, XCircleFill } from "react-bootstrap-icons";
 import "./styled.scss";
 
 function ContactCard({ setContact }) {
@@ -14,9 +14,46 @@ function ContactCard({ setContact }) {
           <XCircleFill size={30} onClick={() => setContact(false)} />
         </div>
 
-        <div className="contact-card-item">
-          <label>Teste de algo que vai ficar aqui</label>
-          <Envelope />
+        <div className="contact-card-content">
+          <div className="contact-card-item">
+            <a href="mailto:vinicius.gama25@hotmail.com?subject=Olá">
+              <div className="contact-card-item-title">
+                <Envelope />
+                <label>E-mail</label>
+              </div>
+              <label>vinicius.gama25@hotmail.com</label>
+            </a>
+          </div>
+
+          <div className="contact-card-item">
+            <a href="https://github.com/fireblaze267">
+              <div className="contact-card-item-title">
+                <Github />
+                <label>Github</label>
+              </div>
+              <label>Vinicius Gama Sá (fireblaze267)</label>
+            </a>
+          </div>
+
+          <div className="contact-card-item">
+            <a href="https://www.linkedin.com/in/vinicius-gama/">
+              <div className="contact-card-item-title">
+                <Linkedin />
+                <label>Linkedin</label>
+              </div>
+              <label>vinicius-gama</label>
+            </a>
+          </div>
+
+          <div className="contact-card-item">
+            <a href="https://www.linkedin.com/in/vinicius-gama/">
+              <div className="contact-card-item-title">
+                <Linkedin />
+                <label>Linkedin</label>
+              </div>
+              <label>vinicius-gama</label>
+            </a>
+          </div>
         </div>
       </div>
     </div>
