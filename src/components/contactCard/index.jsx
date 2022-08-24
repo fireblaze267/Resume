@@ -44,16 +44,6 @@ function ContactCard({ setContact }) {
               <label>vinicius-gama</label>
             </a>
           </div>
-
-          <div className="contact-card-item">
-            <a href="https://www.linkedin.com/in/vinicius-gama/">
-              <div className="contact-card-item-title">
-                <Linkedin />
-                <label>Linkedin</label>
-              </div>
-              <label>vinicius-gama</label>
-            </a>
-          </div>
         </div>
       </div>
     </div>
