@@ -16,7 +16,7 @@ function Navbar({ setSkill, skill, setContact, contact }) {
       </div>
       <div
         onClick={() => {
-          setContact(contact === false ? true : false), setSkill(false);
+          setContact(!contact), setSkill(false);
         }}
         className={contact ? "navbar-item-active" : "navbar-item"}
       >
@@ -32,7 +32,7 @@ function Navbar({ setSkill, skill, setContact, contact }) {
 
       <div
         onClick={() => {
-          setSkill(skill === false ? true : false), setContact(false);
+          setSkill(!skill), setContact(false);
         }}
         className={skill ? "navbar-item-active" : "navbar-item"}
       >
