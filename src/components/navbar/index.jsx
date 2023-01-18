@@ -25,10 +25,12 @@ function Navbar({ setSkill, skill, setContact, contact }) {
         {contact && <XCircleFill style={{ marginLeft: 10 }} />}
       </div>
 
-      {/*<div className="navbar-item">
-        <HouseFill size={20} />
-        <p>Home</p>
-      </div>*/}
+      {/*
+        <div className="navbar-item">
+          <BookFill size={20} />
+          <p>Projetos</p>
+        </div>
+      */}
 
       <div
         onClick={() => {

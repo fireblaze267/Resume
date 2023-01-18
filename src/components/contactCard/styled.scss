@@ -11,20 +11,12 @@
     left: 0;
   }
   &-card {
+    display: flex;
     background-color: #3b3b3b;
-    min-width: fit-content;
     width: 40%;
     height: auto;
     color: white;
     padding: 10px;
-  }
-  &-header {
-    display: flex;
-    align-items: center;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: #01a7c2;
-    justify-content: space-between;
     svg {
       color: white;
       &:hover {
@@ -32,6 +24,19 @@
         transform: rotate(90deg);
         transition: 0.2s;
       }
+    }
+  }
+  &-header {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #01a7c2;
+    justify-content: space-between;
+    label {
+      color: #e2e2e2;
     }
   }
   &-card-content {
@@ -45,7 +50,7 @@
     flex-direction: column;
     border-radius: 10px;
     background-color: #01a7c2;
-    width: 60%;
+    width: 90%;
     min-width: fit-content;
     padding: 15px;
     margin: 15px 10px;
@@ -59,6 +64,9 @@
     &:hover {
       transition: 0.2s;
       transform: translateY(-5px);
+    }
+    svg:hover {
+      transform: none;
     }
   }
   &-card-item-title {

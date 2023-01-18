@@ -11,7 +11,6 @@ function ContactCard({ setContact }) {
             <h1>Contato</h1>
             <label>Aqui algumas formas de entrar em contato comigo</label>
           </div>
-          <XCircleFill size={30} onClick={() => setContact(false)} />
         </div>
 
         <div className="contact-card-content">
@@ -45,6 +44,7 @@ function ContactCard({ setContact }) {
             </a>
           </div>
         </div>
+        <XCircleFill size={50} onClick={() => setContact(false)} />
       </div>
     </div>
   );
