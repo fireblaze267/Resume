@@ -44,7 +44,11 @@ function ContactCard({ setContact }) {
             </a>
           </div>
         </div>
-        <XCircleFill size={50} onClick={() => setContact(false)} />
+        <XCircleFill
+          style={{ margin: 4 }}
+          size={50}
+          onClick={() => setContact(false)}
+        />
       </div>
     </div>
   );
