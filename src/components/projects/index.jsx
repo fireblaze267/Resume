@@ -1,7 +1,7 @@
 import "./styles.scss";
-import HDF from "../../assets/HDF.png";
-import Codeby from "../../assets/Codeby.png";
-import onlyNotes from "../../assets/onlyNotes.png";
+import HDF from "../../assets/HDF.webp";
+import Codeby from "../../assets/Codeby.webp";
+import onlyNotes from "../../assets/onlyNotes.webp";
 
 function Project() {
   const projects = [
