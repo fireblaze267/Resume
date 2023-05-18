@@ -27,7 +27,7 @@ export const skills = [
     percent: 3,
   },
   {
-    title: "SLQ",
+    title: "SQl",
     icon: sqlIcon,
     percent: 3,
   },

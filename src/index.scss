@@ -1,3 +1,5 @@
+//https://coolors.co/cfdbd5-e8eddf-f5cb5c-242423-333533
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
@@ -11,11 +13,13 @@ body,
 html {
   margin: 0;
   padding: 0;
+  background-color: #e8eddf;
 }
 
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+  color: #242423;
 }
 
 p,
@@ -26,7 +30,7 @@ label,
 }
 a {
   text-decoration: none;
-  color: black;
+  color: #242423;
   width: 100%;
 }
 button {

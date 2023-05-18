@@ -1,0 +1,52 @@
+.project {
+  &-main {
+    width: 100%;
+    margin-top: 2rem;
+    background-color: #333533;
+    padding: 15px;
+    border-radius: 12px;
+    h1 {
+      font-size: 6vw;
+      color: #cfdbd5;
+      margin-bottom: 12px;
+    }
+  }
+  &-content {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  &-item {
+    transition: 0.2s;
+    width: 100%;
+    background-color: #e8eddf;
+    border-radius: 8px;
+    padding: 4px;
+    height: 100%;
+    img {
+      width: 100%;
+      border-radius: 4px;
+    }
+    &:hover {
+      transition: 0.2s;
+      transform: translateY(-10px);
+    }
+  }
+  &-text {
+    padding: 12px;
+    h1 {
+      color: #333533;
+      font-size: 2rem;
+      border-bottom: 1px solid #333533;
+      margin-bottom: 4px;
+    }
+    label {
+      font-size: 1.2rem;
+    }
+  }
+}

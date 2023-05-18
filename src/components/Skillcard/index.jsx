@@ -4,13 +4,12 @@ import {
   CircleFill,
   Download,
   StarFill,
-  XCircleFill,
 } from "react-bootstrap-icons";
 import "./styled.scss";
 import { skills } from "../../utils/skills";
 import Pdf from "../../assets/ViniciusGama.pdf";
 
-function SkillsCard({ setSkill }) {
+function SkillsCard() {
   const icons8Link = () => {
     window.open("https://icons8.com/");
   };
@@ -20,7 +19,6 @@ function SkillsCard({ setSkill }) {
       <div className="skill-view">
         <div className="skill-title">
           <h1>Habilidades</h1>
-          <XCircleFill size={30} onClick={() => setSkill(false)} />
         </div>
 
         <div className="skill-content">
@@ -53,7 +51,7 @@ function SkillsCard({ setSkill }) {
           <a href={Pdf} download="ViniciusGama.pdf">
             <button>
               <label>
-                <Download size={25} /> Download CV
+                <Download size={25} /> Baixar CV
               </label>
             </button>
           </a>
