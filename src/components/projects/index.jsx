@@ -39,7 +39,7 @@ function Project() {
               href={x.link}
               className="project-item"
             >
-              <img src={x.img} />
+              <img alt={x.title} src={x.img} />
               <div className="project-text">
                 <h1>{x.title}</h1>
                 <label>{x.text}</label>

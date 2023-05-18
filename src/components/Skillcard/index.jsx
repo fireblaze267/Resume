@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Circle,
-  CircleFill,
-  Download,
-  StarFill,
-} from "react-bootstrap-icons";
+import { Circle, CircleFill, Download, StarFill } from "react-bootstrap-icons";
 import "./styled.scss";
 import { skills } from "../../utils/skills";
 import Pdf from "../../assets/ViniciusGama.pdf";
@@ -26,7 +21,7 @@ function SkillsCard() {
             return (
               <div key={index} className="skill-card">
                 <p>
-                  <img src={e.icon} />
+                  <img alt={`${e.title} logo`} src={e.icon} />
                   {e.title}
                   {e.primary && <StarFill />}
                 </p>
