@@ -1,8 +1,8 @@
 import React from "react";
 import { Circle, CircleFill, Download, StarFill } from "react-bootstrap-icons";
-import "./styled.scss";
+import Pdf from "../../assets/Vinicius_Gama.pdf";
 import { skills } from "../../utils/skills";
-import Pdf from "../../assets/ViniciusGama.pdf";
+import "./styled.scss";
 
 function SkillsCard() {
   const icons8Link = () => {
@@ -43,7 +43,7 @@ function SkillsCard() {
         <label onClick={icons8Link}>Icons by icons8</label>
 
         <div onClick={() => setSkillView(false)} className="skill-button">
-          <a href={Pdf} download="ViniciusGama.pdf">
+          <a href={Pdf} download="Vinicius_Gama.pdf">
             <button>
               <label>
                 <Download size={25} /> Baixar CV

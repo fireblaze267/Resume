@@ -1,13 +1,14 @@
-import reactIcon from "../assets/icons8-reagir-90.png";
-import nodeIcon from "../assets/icons8-node-js-90.png";
-import sqlIcon from "../assets/icons8-sql-90.png";
-import htmlIcon from "../assets/icons8-html-5-90.png";
-import cssIcon from "../assets/icons8-css3-90.png";
 import angularIcon from "../assets/icons8-angularjs-90.png";
-import gitIcon from "../assets/icons8-git-90.png";
-import mysqlIcon from "../assets/icons8-logo-mysql-90.png";
-import postgreeIcon from "../assets/icons8-postgreesql-90.png";
+import cssIcon from "../assets/icons8-css3-90.png";
 import figmaIcon from "../assets/icons8-figma-90.png";
+import gitIcon from "../assets/icons8-git-90.png";
+import htmlIcon from "../assets/icons8-html-5-90.png";
+import jsIcon from "../assets/icons8-js-90.png";
+import mysqlIcon from "../assets/icons8-logo-mysql-90.png";
+import nodeIcon from "../assets/icons8-node-js-90.png";
+import postgreeIcon from "../assets/icons8-postgreesql-90.png";
+import reactIcon from "../assets/icons8-reagir-90.png";
+import sqlIcon from "../assets/icons8-sql-90.png";
 
 export const skills = [
   {
@@ -20,6 +21,11 @@ export const skills = [
     title: "React Native",
     icon: reactIcon,
     percent: 2,
+  },
+  {
+    title: "JavaScript",
+    icon: jsIcon,
+    percent: 4,
   },
   {
     title: "Node Js",
